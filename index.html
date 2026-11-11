@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto académico de Alison Martínez Rivero para practicar HTML, CSS, JavaScript y control de versiones.">
+  <meta name="theme-color" content="#111827">
+  <title>Mi primera página web | Alison Martínez Rivero</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">AMR<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#control-versiones">Control de versiones</a>
+    </nav>
+    <button class="theme-button" id="theme-toggle" type="button" aria-pressed="false">Cambiar tema</button>
+  </header>
+
+  <main id="contenido">
+    <section class="hero shell" id="inicio" aria-labelledby="titulo-principal">
+      <p class="eyebrow">AP-01 · SEGUNDA ACTIVIDAD GENERAL DEL TEMA 1 · IDFI202</p>
+      <h1 id="titulo-principal">Mi primera <span>página web.</span></h1>
+      <p class="intro">Primera actividad práctica del Tema 1 y segunda actividad evaluativa general, después del Seminario 1. Un espacio para aprender a construir, organizar y mejorar proyectos informáticos, una versión a la vez.</p>
+      <a class="primary-link" href="#sobre-mi">Explorar el proyecto <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="section shell" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+      <div>
+        <p class="eyebrow">01 / PRESENTACIÓN</p>
+        <h2 id="sobre-mi-titulo">Sobre mí</h2>
+      </div>
+      <div class="section-copy">
+        <p class="lead">Soy <strong>Alison Martínez Rivero</strong>, estudiante de Ingeniería en Ciencias Informáticas, grupo <strong>IDFI202</strong>.</p>
+        <p>Este proyecto sirve como práctica introductoria de desarrollo web. Su estructura separa el contenido, la presentación visual y el comportamiento en archivos independientes.</p>
+      </div>
+    </section>
+
+    <section class="technology-section" id="tecnologias" aria-labelledby="tecnologias-titulo">
+      <div class="shell">
+        <p class="eyebrow">02 / TECNOLOGÍAS</p>
+        <h2 id="tecnologias-titulo">Tres piezas que trabajan juntas</h2>
+        <div class="cards">
+          <article class="card"><span>01</span><h3>HTML</h3><p>Define la estructura y el significado del contenido.</p></article>
+          <article class="card"><span>02</span><h3>CSS</h3><p>Controla los colores, la distribución y la adaptación a pantallas distintas.</p></article>
+          <article class="card"><span>03</span><h3>JavaScript</h3><p>Añade comportamiento e interacción a la página.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="control-versiones" aria-labelledby="versiones-titulo">
+      <div>
+        <p class="eyebrow">03 / APRENDIZAJE</p>
+        <h2 id="versiones-titulo">Un proyecto, varias versiones</h2>
+      </div>
+      <div class="section-copy">
+        <p>El control de versiones permite registrar cambios, consultar el historial y recuperar estados anteriores. <strong>Git</strong> gestiona ese historial; <strong>GitHub</strong> aloja repositorios en línea y facilita compartirlos.</p>
+        <div class="note"><strong>Objetivo de la práctica</strong><p>Preparar un proyecto web, organizar sus archivos y publicarlo en un repositorio remoto para practicar el flujo básico de control de versiones. Esta es la primera actividad práctica del Tema 1; el Seminario 1 fue la primera actividad evaluativa general.</p></div>
+        <button class="action-button" id="greeting-button" type="button">Probar interacción</button>
+        <p id="interaction-message" class="status-message" role="status" aria-live="polite">El resultado aparecerá aquí.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-content">
+      <p>Alison Martínez Rivero · Proyecto académico</p>
+      <p>Aprender, practicar y mejorar.</p>
+      <p>© <span id="current-year">2026</span></p>
+    </div>
+  </footer>
+</body>
+</html>
