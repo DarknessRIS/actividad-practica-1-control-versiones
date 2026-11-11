@@ -1,1 +1,18 @@
-Primer commit: proyecto web de la AP-01
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configuración local de editores
+.vscode/
+.idea/
+
+# Archivos temporales y copias de respaldo
+*.tmp
+*.bak
+*~
+
+# Archivos de registro
+*.log
+
